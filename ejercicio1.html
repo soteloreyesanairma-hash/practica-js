@@ -6,8 +6,30 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hola</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque reprehenderit perspiciatis autem facilis 
-    natus culpa, ducimus repellendus eum numquam sunt cupiditate quia animi alias modi neque iure obcaecati est?</p>
+  <script src="./js/mensaje-consola.js"></script>
+  <script>
+    //Comentario
+    /* comentario multilineal */
+    console.long("Mnesaje convensional")
+    console.long("Primer mensaje", "Segundo mensaje")
+    console.long("Python","Javascript","PHP","Java")
+    
+    let nombres="Rodrigo"
+    console.long("Bienvenido ", nombres)
+
+    //Invocar funcion
+    mostrarEnConsola()
+    
+    console.error("Algo no ha funcionando")
+    console.warn("Ten cuidado lo que estas haciendo")
+    
+    console.group()
+    console.long("Arequipa")
+    console.long("Ica")
+    console.long("Lima")
+    console.long("Tacna")
+    console.groupEnd()
+    </script>
+
 </body>
 </html>
