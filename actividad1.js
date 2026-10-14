@@ -21,3 +21,8 @@ const pelicula = {
   direccion: "Dennis Dugan",
   escritores: ["Adam Sandler", "Fred Wolf"]
 }
+
+console.log(pelicula.titulo)
+console.log(pelicula.anio)
+console.log(pelicula.escritores[1])
+console.log(pelicula.elenco[0].nombre)
