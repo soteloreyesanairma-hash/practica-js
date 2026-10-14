@@ -2,11 +2,14 @@
 //cadenas, enteros, decimales, logicos, arreglos, nuevos obejetos
 
 const computadora = {
-  clave: "",
-  entero: 0,
+  marca: "HP",
+  ram: 16,
   velocidad: 4.82,
-  logico: false,
-  arreglos: [],
-  objetos: [{},{},{}]
-
+  encendida: true,
+  accesorios: ["mouse", "teclado", "monitor"],
+  procesador: [{marca: "intel"},{modelo: "core i7"},{nucleos: 8}]
 }
+
+console.log(computadora)
+console.log(computadora.marca)
+console.log(computadora.procesador[1].modelo)

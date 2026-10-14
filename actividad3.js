@@ -21,11 +21,21 @@ console.log(contarNumero([12, 5, 19, 8, 3, 14, 7, 16]))
 //corresponde a un número capicúa. 121, 444, 3223. Solo permite analizar valores  
 //de hasta 5 digitos (99999)
 //test, demostracion, console.log
-function analizarNumero(listaNumero = [], numeroCapicua = true){
-  let resultado = 0
-  if(numeroCapicua){
+function analizarNumero(listaNumero = []){
+  let resultado = []
     listaNumero.forEach(numero =>{
-      if(numero = resultado) resultado = numero
+      let invertido = 0
+      let original = numero
+
+      if(numero <= 99999){
+        while (numero > 0){
+          invertido = invertido * 10 + numero % 10
+          numero = (numero -  numero % 10) / 10
+        }
+      }
+      resultado.push(original === invertido ? true : false)
     })
+    return resultado
   }
-}
+
+console.log(analizarNumero([121, 333,444,555]))
